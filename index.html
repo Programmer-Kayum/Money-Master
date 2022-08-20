@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="money-master-main/money.png" type="image/x-icon">
     <style>
         .image img {
             height: 100%;
@@ -40,8 +41,8 @@
 
                     <!-- total income section start -->
 
-                    <h1 class="mb-3 text-1xl font-semibold ">Income:<input class="w-3/12 py-1 px-2 rounded-lg"
-                            type="text" name="" id=""> </h1>
+                    <h1 class="mb-3 text-1xl font-semibold ">Income:<input id="income-amount"
+                            class="w-3/12 py-1 px-2 rounded-lg" type="text" name=""> </h1>
 
 
                     <!-- total income section end -->
@@ -53,18 +54,18 @@
 
 
                     <h1 class="mb-3 text-1xl font-semibold ">Food : <input class=" w-3/12 py-1 px-2 rounded-lg"
-                            type="text" name="" id=""> </h1>
+                            type="text" name="" id="food-amoun"> </h1>
 
 
                     <h1 class="mb-3 text-1xl font-semibold ">Rent : <input class=" w-3/12 py-1 px-2 rounded-lg"
-                            type="text" name="" id=""> </h1>
+                            type="text" name="" id="rent-amount"> </h1>
 
 
                     <h1 class="mb-3 text-1xl font-semibold">Cloth : <input class=" w-3/12 py-1 px-2 rounded-lg"
-                            type="text" name="" id=""> </h1>
+                            type="text" name="" id="cloth-amount"> </h1>
 
 
-                    <button
+                    <button id="calculate-btn"
                         class="mb-3  text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 py-1 px-8 rounded-lg">Calculate</button>
 
                     <!-- total expenses section end  -->
@@ -73,22 +74,30 @@
 
 
 
-                    <h1 class=" mb-3 text-2xl font-semibold">Total Expenses: <span class="text-3xl font-bold">000</span>
+                    <h1 class=" mb-3 text-2xl font-semibold">Total Expenses: <span id="total-expenses"
+                            class="text-3xl font-bold">000</span>
                     </h1>
-                    <h1 class="mb-3 text-2xl font-semibold">Balance: <span class="text-3xl font-bold">000</span></h1>
-                    <h1 class="mb-3 text-1xl font-semibold ">Save: <input class="w-1/5 px-2 py-1 rounded-lg" type="text"
-                            name="" id="">
+
+
+                    <h1 class="mb-3 text-2xl font-semibold">Balance: <span id="total-balance"
+                            class="text-3xl font-bold">000</span></h1>
+
+
+                    <h1 class="mb-3 text-1xl font-semibold ">Save: <input id="parcentenge"
+                            class="w-1/5 px-2 py-1 rounded-lg" type="text" name="" id="">
                         <span>%</span> <button
-                            class="mb-3 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white py-1 px-12 rounded-lg">Save</button>
+                            class="mb-3 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white py-1 px-12 rounded-lg"
+                            id="save-btn">Save</button>
                     </h1>
 
 
                     <!-- last section  -->
 
 
-                    <h1 class="mb-3 text-2xl font-semibold">Saving Amount: <span class=" text-3xl font-bold">000</span>
+                    <h1 class="mb-3 text-2xl font-semibold">Saving Amount: <span id="saving-amount"
+                            class=" text-3xl font-bold">000</span>
                     </h1>
-                    <h1 class="mb-3 text-2xl font-semibold">Remaining Balance: <span
+                    <h1 class="mb-3 text-2xl font-semibold">Remaining Balance: <span id="remain-amount"
                             class=" text-3xl font-bold">000</span></h1>
 
                 </div>
